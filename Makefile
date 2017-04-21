@@ -37,7 +37,7 @@ INC = 	lem_in.h\
 		visualizer.h \
 		$(LIB_PATH)/includes/libft.h
 
-FLAGS = -Wall -Wextra -Werror -g
+FLAGS = -Wall -Wextra -Werror
 
 all: lem-in visu-hex
 
