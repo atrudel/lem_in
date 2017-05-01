@@ -6,7 +6,7 @@
 /*   By: atrudel <atrudel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/07 16:08:04 by atrudel           #+#    #+#             */
-/*   Updated: 2017/04/20 12:13:38 by atrudel          ###   ########.fr       */
+/*   Updated: 2017/05/01 17:46:21 by atrudel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,5 @@ int			main(int argc, char **argv)
 		while (!finished(&data))
 			do_one_turn(&data);
 	delete_data(&data);
-	sleep(1);
 	return (0);
 }
