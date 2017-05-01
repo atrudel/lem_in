@@ -6,7 +6,7 @@
 /*   By: atrudel <atrudel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/07 17:17:45 by atrudel           #+#    #+#             */
-/*   Updated: 2017/04/20 13:50:11 by atrudel          ###   ########.fr       */
+/*   Updated: 2017/04/28 14:13:25 by atrudel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	error_exit(char *message, t_data *data)
 	if (data->error)
 		ft_putstr_fd(data->error_fb, 2);
 	delete_data(data);
-	sleep(1);
 	exit(-1);
 }
 

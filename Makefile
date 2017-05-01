@@ -6,7 +6,7 @@
 #    By: atrudel <atrudel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/07 16:08:49 by atrudel           #+#    #+#              #
-#    Updated: 2017/04/21 10:25:54 by atrudel          ###   ########.fr        #
+#    Updated: 2017/05/01 17:44:45 by atrudel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,10 +42,10 @@ FLAGS = -Wall -Wextra -Werror
 all: lem-in visu-hex
 
 lem-in: $(OBJ_PATH)/main.lem_in.o $(OBJ) $(LIB_PATH)/libft.a
-	gcc -o lem-in $(OBJ_PATH)/main.lem_in.o $(OBJ) -lmlx -framework OpenGL -framework AppKit -L $(LIB_PATH) -lft
+	gcc -o lem-in $(OBJ_PATH)/main.lem_in.o $(OBJ) $(FLAGS) -lmlx -framework OpenGL -framework AppKit -L $(LIB_PATH) -lft
 
 visu-hex: $(OBJ_PATH)/main.visu_hex.o $(OBJ) $(LIB_PATH)/libft.a
-	gcc -o visu-hex $(OBJ_PATH)/main.visu_hex.o $(OBJ) -lmlx -framework OpenGL -framework AppKit -L $(LIB_PATH) -lft
+	gcc -o visu-hex $(OBJ_PATH)/main.visu_hex.o $(OBJ) $(FLAGS) -lmlx -framework OpenGL -framework AppKit -L $(LIB_PATH) -lft
 
 $(LIB_PATH)/libft.a: $(LIB_PATH)/Makefile $(LIB_PATH)/includes/libft.h
 	@make -C $(LIB_PATH)/ fclean && make -C $(LIB_PATH)

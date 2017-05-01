@@ -6,7 +6,7 @@
 /*   By: atrudel <atrudel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/17 15:43:38 by atrudel           #+#    #+#             */
-/*   Updated: 2017/04/20 13:40:02 by atrudel          ###   ########.fr       */
+/*   Updated: 2017/04/28 14:27:29 by atrudel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void		add_room(t_data *data, t_room *new_room)
 	{
 		if (twin->x != new_room->x || twin->y != new_room->y)
 		{
-			ft_asprintf(&data->error_fb, "Room named '%s'\n\
-			is listed twice with different coordinates.\n\
-			Second mention at line %i\n",
+			ft_asprintf(&data->error_fb, "Room named '%s'\
+			\nis listed twice with different coordinates.\
+			\nSecond mention at line %i\n",
 			new_room->label, ft_lstsize(data->input) + 1);
 			error_exit("ERROR", data);
 		}
